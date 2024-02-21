@@ -1,0 +1,14 @@
+.\output\app\freertos_cli.o: Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\FreeRTOS_CLI.c
+.\output\app\freertos_cli.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\output\app\freertos_cli.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS.h
+.\output\app\freertos_cli.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\app\freertos_cli.o: ..\FreeRTOSConfig.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\projdefs.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\portable.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\deprecated_definitions.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\mpu_wrappers.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\task.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\list.h
+.\output\app\freertos_cli.o: .\Third_Party\FreeRTOSv10.1.1\FreeRTOS\Source\include\FreeRTOS_CLI.h

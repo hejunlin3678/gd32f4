@@ -1,0 +1,247 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 Microsoft, Microsoft, LIC=21EUH-WBBE2-ADVKK-ZIEKN-U0XQR-0TNX8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.88.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\Desktop\hjl\01-BMC-CODE-V6.0-FOR-LS\MDK\GD32450Z_EVAL.uvprojx
+Project File Date:  07/04/2023
+
+<h2>Output:</h2>
+Rebuild target 'GD32F427ZKT6_BOOT'
+compiling Sample-CLI-commands.c...
+.\inc\ymodem\hk_common.h(25): warning:  #47-D: incompatible redefinition of macro "IS_09" (declared at line 25 of ".\inc\ymodem/common.h")
+  #define IS_09(c) (((c) >= '0') && ((c) <= '9'))
+.\inc\ymodem\hk_common.h(26): warning:  #47-D: incompatible redefinition of macro "ISVALIDHEX" (declared at line 26 of ".\inc\ymodem/common.h")
+  #define ISVALIDHEX(c) (IS_CAP_LETTER(c) || IS_LC_LETTER(c) || IS_09(c))
+.\inc\ymodem\hk_common.h(31): warning:  #47-D: incompatible redefinition of macro "CONVERTHEX" (declared at line 31 of ".\inc\ymodem/common.h")
+  #define CONVERTHEX(c) (IS_09(c) ? ((c) - '0') : CONVERTHEX_ALPHA(c))
+app\console\Sample-CLI-commands.c(712): warning:  #177-D: variable "tx_buffer" was declared but never referenced
+        uint8_t tx_buffer[BUFFER_SIZE] = {0};
+app\console\Sample-CLI-commands.c(716): warning:  #177-D: variable "is_successful" was declared but never referenced
+        uint8_t is_successful = 0;
+app\console\Sample-CLI-commands.c(119): warning:  #177-D: variable "xTaskStats" was declared but never referenced
+  static const CLI_Command_Definition_t xTaskStats =
+app\console\Sample-CLI-commands.c(130): warning:  #177-D: variable "xThreeParameterEcho" was declared but never referenced
+  static const CLI_Command_Definition_t xThreeParameterEcho =
+app\console\Sample-CLI-commands.c(141): warning:  #177-D: variable "xParameterEcho" was declared but never referenced
+  static const CLI_Command_Definition_t xParameterEcho =
+app\console\Sample-CLI-commands.c(163): warning:  #177-D: variable "xQueryHeap" was declared but never referenced
+  static const CLI_Command_Definition_t xQueryHeap =
+app\console\Sample-CLI-commands.c(250): warning:  #177-D: variable "xFmcTest" was declared but never referenced
+  static const CLI_Command_Definition_t xFmcTest =
+app\console\Sample-CLI-commands.c(382): warning:  #177-D: variable "xSdioTest" was declared but never referenced
+  static const CLI_Command_Definition_t xSdioTest =
+app\console\Sample-CLI-commands.c(432): warning:  #177-D: variable "xSdTest" was declared but never referenced
+  static const CLI_Command_Definition_t xSdTest =
+app\console\Sample-CLI-commands.c(462): warning:  #177-D: variable "xSdGetSize" was declared but never referenced
+  static const CLI_Command_Definition_t xSdGetSize =
+app\console\Sample-CLI-commands.c(546): warning:  #177-D: variable "xSpiRead" was declared but never referenced
+  static const CLI_Command_Definition_t xSpiRead =
+app\console\Sample-CLI-commands.c(636): warning:  #177-D: variable "xSpiWrite" was declared but never referenced
+  static const CLI_Command_Definition_t xSpiWrite =
+app\console\Sample-CLI-commands.c(772): warning:  #177-D: variable "xSpiTest" was declared but never referenced
+  static const CLI_Command_Definition_t xSpiTest =
+app\console\Sample-CLI-commands.c(831): warning:  #177-D: variable "xGetClk" was declared but never referenced
+  static const CLI_Command_Definition_t xGetClk =
+app\console\Sample-CLI-commands.c(927): warning:  #177-D: variable "xGetPhy" was declared but never referenced
+  static const CLI_Command_Definition_t xGetPhy =
+app\console\Sample-CLI-commands.c(1019): warning:  #177-D: variable "xMdioRead" was declared but never referenced
+  static const CLI_Command_Definition_t xMdioRead =
+app\console\Sample-CLI-commands.c(1119): warning:  #177-D: variable "xMdioWrite" was declared but never referenced
+  static const CLI_Command_Definition_t xMdioWrite =
+app\console\Sample-CLI-commands.c: 20 warnings, 0 errors
+compiling serial.c...
+compiling UARTCommandConsole.c...
+compiling fmc.c...
+compiling gd25qxx.c...
+compiling basecpld.c...
+compiling bootload.c...
+compiling biosupgrade.c...
+compiling hk_sys_warn.c...
+compiling hk_i2c.c...
+app\i2c\hk_i2c.c(436): warning:  #111-D: statement is unreachable
+                  break;
+app\i2c\hk_i2c.c: 1 warning, 0 errors
+compiling pin.c...
+compiling emmc.c...
+app\emmc\emmc.c(122): warning:  #550-D: variable "stopcondition" was set but never used
+  static uint32_t totalnumber_bytes = 0, stopcondition = 0;
+app\emmc\emmc.c: 1 warning, 0 errors
+compiling bmcupgrade.c...
+app\upgrade\bmcupgrade.c(82): warning:  #177-D: variable "data_test" was declared but never referenced
+      uint8_t data_test[32] = {0};
+app\upgrade\bmcupgrade.c(218): warning:  #870-D: invalid multibyte character sequence
+              printf("BMC升级�?.....请等�?.....\r\n");
+app\upgrade\bmcupgrade.c(218): warning:  #870-D: invalid multibyte character sequence
+              printf("BMC升级�?.....请等�?.....\r\n");
+app\upgrade\bmcupgrade.c(704): warning:  #223-D: function "bc_cpu_power_off" declared implicitly
+              bc_cpu_power_off();
+app\upgrade\bmcupgrade.c: 4 warnings, 0 errors
+compiling ipmb.c...
+app\ipmb\ipmb.c(71): warning:  #188-D: enumerated type mixed with another type
+  IPMB_SLOT_TYPE slot = 0; // 槽位
+app\ipmb\ipmb.c(119): warning:  #188-D: enumerated type mixed with another type
+          slot = 0; // 读不到，默认IIC地址:0xC0
+app\ipmb\ipmb.c: 2 warnings, 0 errors
+compiling ipmb_slave.c...
+app\ipmb\ipmb_slave.c(632): warning:  #177-D: variable "cpu_last_v" was declared but never referenced
+      static uint16_t cpu_last_v = 0;  // temp save cpu_12V
+app\ipmb\ipmb_slave.c: 1 warning, 0 errors
+compiling diskio.c...
+compiling fatfs_user.c...
+compiling ff.c...
+compiling hk_wdg.c...
+compiling common.c...
+compiling download.c...
+compiling ymodem.c...
+compiling hk_common.c...
+compiling hk_ymodem.c...
+app\ymodem\hk_ymodem.c(148): warning:  #550-D: variable "ack_crc16" was set but never used
+      char pkt_ack, ack_crc16;
+app\ymodem\hk_ymodem.c(271): warning:  #177-D: variable "crc" was declared but never referenced
+      uint32_t crc;
+app\ymodem\hk_ymodem.c(273): warning:  #550-D: variable "ret" was set but never used
+      int ret = -1;
+app\ymodem\hk_ymodem.c(425): warning:  #513-D: a value of type "char *" cannot be assigned to an entity of type "uint8_t *"
+          for (packets_received = 0, file_done = 0, buf_ptr = file_data;;)
+app\ymodem\hk_ymodem.c(430): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              switch (ymodem_pkt_receive(packet_data, &packet_length))
+app\ymodem\hk_ymodem.c(469): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "uint32_t *"
+                                  str2int(file_size, &size);
+app\ymodem\hk_ymodem.c(418): warning:  #550-D: variable "buf_ptr" was set but never used
+      uint8_t packet_data[PKT_DATA_1K + PACKET_OVERHEAD] = {0}, file_size[FILE_SIZE_LENGTH] = {0}, *file_ptr = NULL, *buf_ptr = NULL;
+app\ymodem\hk_ymodem.c(598): warning:  #161-D: unrecognized #pragma
+  #pragma region ymodem_update
+app\ymodem\hk_ymodem.c(641): warning:  #167-D: argument of type "void (*)(uint8_t)" is incompatible with parameter of type "YMODEM_PUTC_FUN"
+      ymodem_io_init(uart4_send, uart4_recv, cal_crc16, delay_ms);
+app\ymodem\hk_ymodem.c(641): warning:  #167-D: argument of type "uint16_t (*)(const uint8_t *, uint32_t)" is incompatible with parameter of type "YMODEM_CRC16_FUN"
+      ymodem_io_init(uart4_send, uart4_recv, cal_crc16, delay_ms);
+app\ymodem\hk_ymodem.c(641): warning:  #167-D: argument of type "void (*)(uint32_t)" is incompatible with parameter of type "YMODEM_DELAY_FUN"
+      ymodem_io_init(uart4_send, uart4_recv, cal_crc16, delay_ms);
+app\ymodem\hk_ymodem.c(645): warning:  #870-D: invalid multibyte character sequence
+      hk_print_msg(HK_INFO, "传入文件名称需要特定要�?....");
+app\ymodem\hk_ymodem.c(649): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+          int ret = ymodem_file_recvive(file_name, NULL, &file_size); // ymodem recv
+app\ymodem\hk_ymodem.c(659): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                  if (strstr(file_name, "mcu-update"))
+app\ymodem\hk_ymodem.c(661): warning:  #870-D: invalid multibyte character sequence
+                      hk_print_msg(HK_INFO, "开始BMC系统升级,请等�?..");
+app\ymodem\hk_ymodem.c(664): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                  else if (strstr(file_name, "bios-update"))
+app\ymodem\hk_ymodem.c(666): warning:  #870-D: invalid multibyte character sequence
+                      hk_print_msg(HK_INFO, "开始BIOS系统升级,请等�?..");
+app\ymodem\hk_ymodem.c(675): warning:  #870-D: invalid multibyte character sequence
+                      printf("\r\n[升级失败]:错误文件�?\
+app\ymodem\hk_ymodem.c(676): warning:  #870-D: invalid multibyte character sequence
+                              \r\nBIOS文件�?bios-update \
+app\ymodem\hk_ymodem.c(677): warning:  #870-D: invalid multibyte character sequence
+                              \r\nBMC文件�?mcu-update\r\n");
+app\ymodem\hk_ymodem.c(636): warning:  #177-D: variable "ret" was declared but never referenced
+      FRESULT ret;
+app\ymodem\hk_ymodem.c(681): warning:  #177-D: label "exit" was declared but never referenced
+          exit:
+app\ymodem\hk_ymodem.c(700): warning:  #1-D: last line of file ends without a newline
+  #pragma endregion
+app\ymodem\hk_ymodem.c(700): warning:  #161-D: unrecognized #pragma
+  #pragma endregion
+app\ymodem\hk_ymodem.c(22): warning:  #177-D: function "printStr" was declared but never referenced
+  static void printStr(uint8_t *cChar)
+app\ymodem\hk_ymodem.c(84): warning:  #177-D: function "ymodem_delay" was declared but never referenced
+  static void ymodem_delay(int ticks)
+app\ymodem\hk_ymodem.c: 26 warnings, 0 errors
+compiling hk_sensor.c...
+app\hk_sensor\hk_sensor.c(35): warning:  #177-D: variable "tx_buffer" was declared but never referenced
+      uint8_t tx_buffer[1] = {0};
+app\hk_sensor\hk_sensor.c(67): warning:  #188-D: enumerated type mixed with another type
+          ch = i;
+app\hk_sensor\hk_sensor.c(90): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      temp_mcu = temp_mcu * 3.3 / 4096;
+app\hk_sensor\hk_sensor.c(91): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      g_sensor_list[SENSOR_MCU_TEMP].data.iValue = (1.43 - temp_mcu) / 0.0043 + 25;
+app\hk_sensor\hk_sensor.c(116): warning:  #223-D: function "flash_read" declared implicitly
+          flash_read(SENSOR_ALARM_VALUE_ADDR + (4 * i), 4, read_data);
+app\hk_sensor\hk_sensor.c(150): warning:  #223-D: function "spi_1_read" declared implicitly
+          g_sensor_list[SENSOR_CPU_CORE_TEMP].data.iValue = spi_1_read(0x50);
+app\hk_sensor\hk_sensor.c: 6 warnings, 0 errors
+compiling hk_adc.c...
+compiling online_check.c...
+compiling gd32f4xx_it.c...
+compiling main.c...
+..\main.c(76): warning:  #177-D: function "AppTaskCreate" was declared but never referenced
+  static void AppTaskCreate(void)
+..\main.c: 1 warning, 0 errors
+compiling systick.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling list.c...
+compiling queue.c...
+compiling stream_buffer.c...
+compiling tasks.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling port.c...
+compiling FreeRTOS_CLI.c...
+compiling gd32f450z_eval.c...
+compiling gd32f4xx_adc.c...
+compiling gd32f4xx_can.c...
+compiling gd32f4xx_crc.c...
+compiling gd32f4xx_ctc.c...
+compiling gd32f4xx_dac.c...
+compiling gd32f4xx_dbg.c...
+compiling gd32f4xx_dci.c...
+compiling gd32f4xx_dma.c...
+compiling gd32f4xx_enet.c...
+compiling gd32f4xx_exmc.c...
+compiling gd32f4xx_exti.c...
+compiling gd32f4xx_fmc.c...
+compiling gd32f4xx_fwdgt.c...
+compiling gd32f4xx_gpio.c...
+compiling gd32f4xx_i2c.c...
+compiling gd32f4xx_ipa.c...
+compiling gd32f4xx_iref.c...
+compiling gd32f4xx_misc.c...
+compiling gd32f4xx_pmu.c...
+compiling gd32f4xx_rcu.c...
+compiling gd32f4xx_rtc.c...
+compiling gd32f4xx_sdio.c...
+compiling gd32f4xx_spi.c...
+compiling gd32f4xx_syscfg.c...
+compiling gd32f4xx_timer.c...
+compiling gd32f4xx_tli.c...
+compiling gd32f4xx_trng.c...
+compiling gd32f4xx_usart.c...
+compiling gd32f4xx_wwdgt.c...
+compiling system_gd32f4xx.c...
+assembling startup_gd32f407_427.s...
+linking...
+Program Size: Code=7972 RO-data=424 RW-data=120 ZI-data=1288  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin -o boot.bin ./output/boot/GD32450Z_BOOT.axf
+".\output\boot\GD32450Z_BOOT.axf" - 0 Error(s), 62 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Desktop\hjl\01-BMC-CODE-V6.0-FOR-LS\MDK\RTE
+  E:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
